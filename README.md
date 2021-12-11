@@ -180,6 +180,7 @@ Additional table (closure table) is required for every table using behavior.
 
 ## Installation
 Composer package will be available from beta version.
+Copy over test and behavior manually to root directory. This tests require two models included in src/Model (it's still early alpha)
 
 ## Setup
 For every table that uses ClosureTable there are 2 setup steps required: **Migration**, and **Behavior Configuration** . 
@@ -815,21 +816,3 @@ $check = $table->is($node, 'sibling'); // implement
   ```
 
 </details>
-
-# Mature Alpha
-  - commends need updat and re-wording;
-  - some duplicated methods need to be merged.
-  - check recently added test (31/07/2021);
-  - add missing method to find SlingBranches and siblingLeaves;
-  - allow find direct children;
-  - add shell;
-  + add migration*
-  - add afterDelete();
-  - test multi trees;
-  - allow to select branches and siblings with all nodes under;
-  - allow to select maximum depth of children to retrieve wiht find('children');
-  - Functionality of TreeBehavior has to be be covered  in 100%;
-  - is searching tree by node depth required eg finding branches having at least X levels of nesting ?
-
-# Final Alpha
-- add configuration for accepted input type: mixed, integerd, entities (required by OrBAC) - to enforce type of value passed to finders and counters.
